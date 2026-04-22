@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "The Future of Remote Work: Building Culture in Distributed Teams",
+    "slug": "future-of-remote-work",
+    "excerpt": "How companies are adapting to remote-first culture and the technologies enabling meaningful connections across time zones.",
+    "content": "Full blog post content here...",
+    "category": "Social",
+    "date": "2026-04-15",
+    "readTime": "5 min read",
+    "featured": true,
+    "resourceful": true,
+    "tags": ["remote work", "team culture", "distributed teams"]
+  },
+  {
+    "id": 2,
+    "title": "AI-Assisted Development: Friend or Foe?",
+    "slug": "ai-assisted-development",
+    "excerpt": "Exploring how AI coding assistants are changing software development workflows and what it means for junior developers.",
+    "content": "Full blog post content here...",
+    "category": "Tech",
+    "date": "2026-04-10",
+    "readTime": "7 min read",
+    "featured": false,
+    "resourceful": true,
+    "tags": ["AI", "development", "coding assistants"]
+  },
+  {
+    "id": 3,
+    "title": "Building Sustainable Business Models for SaaS Startups",
+    "slug": "sustainable-saas-business-models",
+    "excerpt": "Lessons learned from successful bootstrapped companies on pricing, retention, and long-term growth strategies.",
+    "content": "Full blog post content here...",
+    "category": "Business",
+    "date": "2026-04-05",
+    "readTime": "6 min read",
+    "featured": true,
+    "resourceful": false,
+    "tags": ["SaaS", "business models", "startups"]
+  },
+  {
+    "id": 4,
+    "title": "Design Systems for Remote Teams",
+    "slug": "design-systems-remote-teams",
+    "excerpt": "How scalable design systems help distributed teams stay aligned and ship faster with consistent UI patterns.",
+    "content": "Full blog post content here...",
+    "category": "Social",
+    "date": "2026-04-12",
+    "readTime": "6 min read",
+    "featured": false,
+    "resourceful": true,
+    "tags": ["design system", "remote work", "collaboration"]
+  },
+  {
+    "id": 5,
+    "title": "Data-Driven Product Roadmaps",
+    "slug": "data-driven-product-roadmaps",
+    "excerpt": "A practical look at how product teams can use analytics and customer feedback to prioritize the next big features.",
+    "content": "Full blog post content here...",
+    "category": "Business",
+    "date": "2026-04-08",
+    "readTime": "7 min read",
+    "featured": false,
+    "resourceful": true,
+    "tags": ["product", "analytics", "roadmap"]
+  },
+  {
+    "id": 6,
+    "title": "Secure Cloud Architecture Best Practices",
+    "slug": "secure-cloud-architecture",
+    "excerpt": "Best practices for building secure, scalable cloud systems that keep data protected without slowing teams down.",
+    "content": "Full blog post content here...",
+    "category": "Tech",
+    "date": "2026-04-02",
+    "readTime": "8 min read",
+    "featured": false,
+    "resourceful": true,
+    "tags": ["cloud", "security", "architecture"]
+  }
+]

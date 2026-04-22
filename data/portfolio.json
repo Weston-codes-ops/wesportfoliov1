@@ -1,0 +1,66 @@
+{
+  "personal": {
+    "name": "Weston Kibisu",
+    "title": "Backend Engineer | Full-Stack Capable",
+    "bio": " Backend engineer specializing in Spring Boot and Django, with experience in React/Next.js. I build scalable, efficient applications and deliver end-to-end solutions that support real-world business needs.",
+    "email": "westonkibisu@gmail.com",
+    "github": "https://github.com/Weston-codes-ops",
+    "linkedin": "https://linkedin.com/in/westonsmithk",
+    "avatar": "/avatar.jpg"
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Sokoonline (Scalable Ecommerce Platform)",
+      "description": "Built a scalable e-commerce platform using modern backend architecture principles, focusing on RESTful API design, authentication and efficient data handling. Developed core features including product management, user authentication, order workflows as well as integrating Daraja API for Safaricom Mobile transactions.",
+      "tags": ["Spring Boot", "REST API", "Authentication", "M-Pesa Integration", "E-commerce"],
+      "impact": "32% reduction in cart abandonment",
+      "github": "https://github.com/Weston-codes-ops/sokoonline",
+      "demo": "https://project1-demo.com",
+      "featured": true,
+      "color": "bg-green-500",
+      "media": {
+        "type": "image",
+        "src": "/images/sokoonline/Sokoonline Project.png",
+        "alt": "E-commerce platform design preview"
+      }
+    },
+    {
+      "id": 2,
+      "title": "SaaS Dashboard Development",
+      "description": "Built responsive analytics dashboard for 10k+ users, improving data visualization and user engagement.",
+      "tags": ["React", "Data Viz", "API Integration"],
+      "impact": "10k+ active users",
+      "github": "https://github.com/yourusername/project2",
+      "demo": "https://project2-demo.com",
+      "featured": true,
+      "media": {
+        "type": "video",
+        "src": "/project2-demo.mp4",
+        "alt": "SaaS dashboard interaction demo"
+      }
+    }
+  ],
+  "skills": [
+    "Springboot",
+    "REST API Development",
+    "Authentication (JWT)",
+    "PostgreSQL",
+    "Django",
+    "API Integration",
+    "System Design",
+    "Version Control (Git)",
+    "Postman",
+    "React/NextJS"
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Tech Startup Inc.",
+      "position": "Senior Full Stack Developer",
+      "period": "2022 - Present",
+      "description": "Led development of customer-facing applications serving 50k+ users. Implemented microservices architecture and improved system performance by 40%.",
+      "technologies": ["React", "Node.js", "PostgreSQL", "AWS"]
+    }
+  ]
+}
