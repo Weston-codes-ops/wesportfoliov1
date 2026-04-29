@@ -7,15 +7,27 @@ import { Clock, ArrowRight, TrendingUp, BookOpen, Star, Calendar, Tag } from 'lu
 export default function blogClient({posts}) {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const categories = ['All', 'Social', 'Tech', 'Business'];
+  const categories = ['All', 'Work & Opportunity', 'Technology & Society', 'Public & Human Development', 
+    'Essays & Reflections', 'Field Notes'];
 
 
   const getCategoryColor = (category) => {
-    const colors = {
-      Social: "bg-gradient-to-r from-blue-500/20 to-cyan-500/20 text-blue-700 border-blue-200/50 dark:border-blue-800/50",
-      Tech: "bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-purple-700 border-purple-200/50 dark:border-purple-800/50",
-      Business: "bg-gradient-to-r from-green-500/20 to-emerald-500/20 text-green-700 border-green-200/50 dark:border-green-800/50"
-    };
+const colors = {
+  "Work & Opportunity":
+    "bg-blue-500/15 text-blue-700 border-blue-300/30",
+
+  "Technology & Society":
+    "bg-purple-500/15 text-purple-700 border-purple-300/30",
+
+  "Public & Human Development":
+    "bg-green-500/15 text-green-700 border-green-300/30",
+
+  "Field Notes":
+    "bg-amber-500/15 text-amber-700 border-amber-300/30",
+
+  "Essays & Reflection":
+    "bg-rose-500/15 text-rose-700 border-rose-300/30",
+};
     return colors[category] || "bg-gradient-to-r from-secondary/20 to-secondary/10 text-secondary-foreground border-border/50";
   };
 
@@ -23,8 +35,11 @@ export default function blogClient({posts}) {
     ? posts
     : posts.filter(post => post.category === selectedCategory);
 
-  const newArticles = filteredPosts.slice(0, 3);
-  const resourcefulArticles = filteredPosts.filter(post => post.resourceful);
+
+const featuredArticle = posts.find(post => post.featured) || posts[0];
+const latestArticles = posts.filter(
+  post => post.slug !== featuredArticle.slug
+).slice(0, 6);
 
   return (
     <>
@@ -48,7 +63,6 @@ export default function blogClient({posts}) {
             className="mb-4"
           >
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
-              <BookOpen className="w-4 h-4" />
               Blog & Insights
             </span>
           </motion.div>
@@ -59,7 +73,7 @@ export default function blogClient({posts}) {
             transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
             className="mb-4 text-3xl lg:text-5xl font-bold bg-gradient-to-r from-foreground via-foreground to-primary bg-clip-text text-transparent"
           >
-            Thoughts & Insights
+            Documenting our time
           </motion.h1>
 
           <motion.p
@@ -68,8 +82,8 @@ export default function blogClient({posts}) {
             transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
             className="text-base lg:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto"
           >
-            Exploring the intersection of technology, business, and human experience.
-            Sharing insights on software development, digital strategy, and the future of work.
+      A journal documenting consequential events in work, technology and society,
+      through thoughtful analysis, reflection and grounded observations
           </motion.p>
         </div>
       </motion.section>
@@ -110,17 +124,16 @@ export default function blogClient({posts}) {
         className="max-w-7xl mx-auto px-6 py-8"
       >
         <div className="flex items-center gap-3 mb-8">
-          <TrendingUp className="w-6 h-6 text-primary" />
-          <h2>New Articles</h2>
+          <h2>Featured Essay</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {newArticles.map((post, index) => (
+          {featuredArticle && (
             <motion.article
-              key={index}
+              key={featuredArticle.slug}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
               whileHover={{ y: -8, scale: 1.02 }}
               className="border border-border rounded-xl overflow-hidden hover:border-primary/30 transition-all bg-card group cursor-pointer shadow-md hover:shadow-xl"
             >
@@ -130,38 +143,34 @@ export default function blogClient({posts}) {
               </div>
               <div className="p-6">
                 <div className="mb-4 flex items-center justify-between">
-                  <span className={`px-3 py-1 rounded-full text-sm ${getCategoryColor(post.category)}`}>
-                    {post.category}
+                  <span className={`px-3 py-1 rounded-full text-sm ${getCategoryColor(featuredArticle.category)}`}>
+                    {featuredArticle.category}
                   </span>
-                  <div className="flex items-center gap-1 text-muted-foreground text-sm">
-                    <Clock className="w-4 h-4" />
-                    <span>{post.readTime}</span>
-                  </div>
                 </div>
 
                 <h3 className="mb-3 group-hover:text-primary transition-colors">
-                  {post.title}
+                  {featuredArticle.title}
                 </h3>
 
                 <p className="text-muted-foreground mb-4 leading-relaxed line-clamp-3">
-                  {post.excerpt}
+                  {featuredArticle.excerpt}
                 </p>
 
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-muted-foreground">{post.date}</span>
+                  <span className="text-sm text-muted-foreground">{new Date(featuredArticle.publishedAt).toLocaleDateString()}</span>
                   <div className="flex items-center gap-2 text-sm text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                    Read more
+                    Read Essay
                     <ArrowRight className="w-4 h-4" />
                   </div>
                 </div>
               </div>
             </motion.article>
-          ))}
+          )}
         </div>
       </motion.section>
 
-      {/* Resourceful Articles Section */}
-      {resourcefulArticles.length > 0 && (
+
+      {latestArticles.length > 0 && (
         <motion.section
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -180,13 +189,13 @@ export default function blogClient({posts}) {
               <Star className="w-6 h-6 text-accent" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold">In-Depth Resources</h2>
-              <p className="text-muted-foreground text-sm">Comprehensive guides and detailed insights</p>
+              <h2 className="text-2xl font-bold">Latest Dispatches</h2>
+              <p className="text-muted-foreground text-sm">Recent Essays, Field Notes and Reflections</p>
             </div>
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-            {resourcefulArticles.map((post, index) => (
+            {latestArticles.map((post, index) => (
               <motion.article
                 key={index}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
@@ -195,14 +204,6 @@ export default function blogClient({posts}) {
                 transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
                 className="group relative overflow-hidden rounded-2xl border border-border/50 bg-card/80 backdrop-blur-sm shadow-lg shadow-black/5 hover:shadow-2xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-1 hover:border-accent/20"
               >
-                {/* Featured badge */}
-                {index === 0 && (
-                  <div className="absolute top-3 left-3 z-10">
-                    <span className="inline-flex rounded-full bg-gradient-to-r from-accent/20 to-primary/20 px-2 py-1 text-xs font-medium uppercase tracking-[0.24em] text-accent border border-accent/20">
-                      Resource
-                    </span>
-                  </div>
-                )}
 
                 {/* Image placeholder with gradient */}
                 <div className="relative h-32 bg-gradient-to-br from-accent/10 via-primary/10 to-secondary/10 overflow-hidden">
@@ -262,7 +263,7 @@ export default function blogClient({posts}) {
           <div className="relative z-10">
             <h2 className="mb-4">Stay Updated</h2>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Get notified when I publish new articles on tech, business, and the future of work.
+              Enjoy my work? Stay tuned by subscribing to my newsletter for more updates
             </p>
             <div className="flex gap-3 max-w-md mx-auto">
               <input

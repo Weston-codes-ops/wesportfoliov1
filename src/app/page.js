@@ -125,26 +125,14 @@ export default function Home() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="relative w-full aspect-square max-w-md mx-auto"
+              className="relative w-full max-w-lg mx-auto"
             >
-              {/* SVG Pattern Background */}
-              <svg className="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 400 400">
-                <defs>
-                  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                    <circle cx="20" cy="20" r="1.5" fill="#6366f1" />
-                  </pattern>
-                </defs>
-                <rect width="400" height="400" fill="url(#grid)" />
-              </svg>
-
+              
               {/* Paste your image here */}
               <img
-                src="#"
+                src={personal.avatar}
                 alt={personal.name}
-                className="relative w-full h-full object-cover rounded-3xl shadow-2xl"
-                style={{
-                  background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%)'
-                }}
+                className="w-full h-auto rounded-full aspect-square object-cover shadow-2xl"
               />
             </motion.div>
           </div>

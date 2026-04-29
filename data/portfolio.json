@@ -1,12 +1,12 @@
 {
   "personal": {
     "name": "Weston Kibisu",
-    "title": "Backend Engineer | Full-Stack Capable",
-    "bio": " Backend engineer specializing in Spring Boot and Django, with experience in React/Next.js. I build scalable, efficient applications and deliver end-to-end solutions that support real-world business needs.",
+    "title": "Backend Engineer | Systems Thinker | Writer & Analyst On Technology and Society",
+    "bio": "Backend engineer focused on building scalable systems with Spring Boot and Django, supported by full-stack capability in React/Next.js. I create efficient digital solutions for real-world business needs and document the technological, economic and societal shifts shaping opportunity and human progress.",
     "email": "westonkibisu@gmail.com",
     "github": "https://github.com/Weston-codes-ops",
     "linkedin": "https://linkedin.com/in/westonsmithk",
-    "avatar": "/avatar.jpg"
+    "avatar": "/images/personal/heroImageI.png"
   },
   "projects": [
     {
@@ -21,7 +21,7 @@
       "color": "bg-green-500",
       "media": {
         "type": "image",
-        "src": "/images/sokoonline/Sokoonline Project.png",
+        "src": "/images/sokoonline/SokoonlineProject.png",
         "alt": "E-commerce platform design preview"
       }
     },
