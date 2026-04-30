@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next-on-pages",
-    "deploy": "pnpm run build && npx wrangler pages deploy .vercel/output/static",
     "start": "next start",
     "lint": "eslint"
   },
