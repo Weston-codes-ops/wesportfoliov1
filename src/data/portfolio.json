@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "category": "tech",
+    "tag": "Web App",
+    "title": "Sokoonline",
+    "description": "Full-stack e-commerce platform built for scale.",
+    "image": "/images/sokoonline.png"
+  },
+  {
+    "id": 2,
+    "category": "tech",
+    "tag": "Dashboard",
+    "title": "Machismo",
+    "description": "SaaS analytics dashboard with real-time reporting.",
+    "placeholderIcon": "LineChart",
+    "placeholderGradient": "from-slate-800 via-slate-900 to-black",
+    "placeholderAccent": "text-emerald-400"
+  },
+  {
+    "id": 3,
+    "category": "tech",
+    "tag": "Dev Tools",
+    "title": "Alderado",
+    "description": "CLI tooling and automation for DevOps workflows.",
+    "placeholderIcon": "Terminal",
+    "placeholderGradient": "from-zinc-800 via-zinc-900 to-zinc-950",
+    "placeholderAccent": "text-sky-400"
+  },
+  {
+    "id": 4,
+    "category": "creative",
+    "tag": "Branding",
+    "title": "Luminoir Studio",
+    "description": "3D Logo designs for a production company.",
+    "placeholderIcon": "Clapperboard",
+    "placeholderGradient": "from-neutral-800 via-stone-900 to-black",
+    "placeholderAccent": "text-amber-300"
+  },
+  {
+    "id": 5,
+    "category": "creative",
+    "tag": "Music Art",
+    "title": "The Koi Album",
+    "description": "Cover artwork for a soundtrack release.",
+    "placeholderIcon": "Disc3",
+    "placeholderGradient": "from-rose-900 via-pink-900 to-fuchsia-950",
+    "placeholderAccent": "text-rose-200"
+  },
+  {
+    "id": 6,
+    "category": "creative",
+    "tag": "Logo",
+    "title": "Maison Tatum",
+    "description": "Wordmark identity for a fragrance brand.",
+    "placeholderIcon": "Sparkles",
+    "placeholderGradient": "from-stone-200 via-amber-50 to-stone-300",
+    "placeholderAccent": "text-stone-800"
+  }
+]
