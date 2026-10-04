@@ -1,60 +1,124 @@
 [
   {
     "id": 1,
+    "slug": "sokoonline",
     "category": "tech",
     "tag": "Web App",
     "title": "Sokoonline",
-    "description": "Full-stack e-commerce platform built for scale.",
-    "image": "/images/sokoonline.png"
+    "description": "Full-stack e-commerce platform built for scale, with a focus on emulating Jumia's user experience and ecommerce prowess.",
+    "image": "/images/sokoonline-poster.png",
+    "projectUrl": "https://sokoonline.codeops.workers.dev/",
+    "role": "Full-stack development",
+    "tools": ["ReactJS", "SpringBoot", "Supabase", "OAuth2", "Stripe"],
+    "purpose": "A marketplace-style e-commerce experience inspired by Jumia, built to bring product discovery and online shopping into one place.",
+    "features": ["Product discovery and browsing", "Online shopping experience", "Full-stack application", "MPESA (Daraja) Integration", "Stripe payment integration", "OAuth2 authentication"],
+    "overview": "Sokoonline explores how a familiar marketplace experience can make it easier for shoppers to find and purchase products.",
+    "devNotes": [
+      { "heading": "The starting point", "body": "Add a note about the original idea and the problem this project set out to solve." },
+      { "heading": "Decisions & details", "body": "Share the important choices, challenges, and details behind the work." }
+    ]
   },
   {
     "id": 2,
+    "slug": "ZonixRMS",
     "category": "tech",
-    "tag": "Dashboard",
-    "title": "Machismo",
-    "description": "SaaS analytics dashboard with real-time reporting.",
-    "placeholderIcon": "LineChart",
-    "placeholderGradient": "from-slate-800 via-slate-900 to-black",
-    "placeholderAccent": "text-emerald-400"
+    "tag": "Desktop & Web Application",
+    "title": "ZonixRMS",
+    "description": "Residential Real-Estate Management System for property managers",
+    "image": "/images/zonix-placard-square.png",
+    "projectUrl": "https://zonixrms.codeopsm.workers.dev/",
+    "role": "Product development",
+    "tools": ["ReactJS", "ElectronJS", "SpringBoot", "Supabase", "Docker"],
+    "purpose": "Streamline workflows for property managers. To make residential property management easier",
+    "features": ["Analytics dashboard", "Real-time reporting", "Payment Tracking","SaaS product experience"],
+    "overview": "A residential real-estate management system that helps property managers streamline their workflows and manage their properties more efficiently.",
+    "devNotes": [
+      { "heading": "The starting point", "body": "Add a note about the original idea and the problem this project set out to solve." },
+      { "heading": "Decisions & details", "body": "Share the important choices, challenges, and details behind the work." }
+    ]
   },
   {
     "id": 3,
+    "slug": "alderado",
     "category": "tech",
     "tag": "Dev Tools",
     "title": "Alderado",
     "description": "CLI tooling and automation for DevOps workflows.",
     "placeholderIcon": "Terminal",
     "placeholderGradient": "from-zinc-800 via-zinc-900 to-zinc-950",
-    "placeholderAccent": "text-sky-400"
+    "placeholderAccent": "text-sky-400",
+    "projectUrl": "",
+    "role": "Developer tooling",
+    "tools": [],
+    "purpose": "Reduce repetitive DevOps work through command-line tools and workflow automation.",
+    "features": ["Command-line interface", "Workflow automation", "DevOps task support"],
+    "overview": "A collection of command-line tools and automation for repeatable DevOps workflows.",
+    "devNotes": [
+      { "heading": "The starting point", "body": "Add a note about the original idea and the problem this project set out to solve." },
+      { "heading": "Decisions & details", "body": "Share the important choices, challenges, and details behind the work." }
+    ]
   },
   {
     "id": 4,
+    "slug": "luminoir-studio",
     "category": "creative",
     "tag": "Branding",
     "title": "Luminoir Studio",
     "description": "3D Logo designs for a production company.",
     "placeholderIcon": "Clapperboard",
     "placeholderGradient": "from-neutral-800 via-stone-900 to-black",
-    "placeholderAccent": "text-amber-300"
+    "placeholderAccent": "text-amber-300",
+    "projectUrl": "",
+    "role": "Visual identity",
+    "tools": [],
+    "purpose": "Give a production company a distinctive visual mark with dimensional character.",
+    "features": ["3D logo concepts", "Production-company identity", "Visual exploration"],
+    "overview": "A 3D logo exploration created for a production company.",
+    "devNotes": [
+      { "heading": "The starting point", "body": "Add a note about the original idea and the problem this project set out to solve." },
+      { "heading": "Decisions & details", "body": "Share the important choices, challenges, and details behind the work." }
+    ]
   },
   {
     "id": 5,
+    "slug": "the-koi-album",
     "category": "creative",
     "tag": "Music Art",
     "title": "The Koi Album",
     "description": "Cover artwork for a soundtrack release.",
     "placeholderIcon": "Disc3",
     "placeholderGradient": "from-rose-900 via-pink-900 to-fuchsia-950",
-    "placeholderAccent": "text-rose-200"
+    "placeholderAccent": "text-rose-200",
+    "projectUrl": "",
+    "role": "Cover artwork",
+    "tools": [],
+    "purpose": "Create a visual identity for a soundtrack release through its cover artwork.",
+    "features": ["Soundtrack cover artwork", "Music-release visual", "Creative direction"],
+    "overview": "Album artwork developed for a soundtrack release.",
+    "devNotes": [
+      { "heading": "The starting point", "body": "Add a note about the original idea and the problem this project set out to solve." },
+      { "heading": "Decisions & details", "body": "Share the important choices, challenges, and details behind the work." }
+    ]
   },
   {
     "id": 6,
+    "slug": "maison-tatum",
     "category": "creative",
     "tag": "Logo",
     "title": "Maison Tatum",
     "description": "Wordmark identity for a fragrance brand.",
     "placeholderIcon": "Sparkles",
     "placeholderGradient": "from-stone-200 via-amber-50 to-stone-300",
-    "placeholderAccent": "text-stone-800"
+    "placeholderAccent": "text-stone-800",
+    "projectUrl": "",
+    "role": "Brand identity",
+    "tools": [],
+    "purpose": "Establish a recognizable wordmark for a fragrance brand.",
+    "features": ["Custom wordmark", "Fragrance-brand identity", "Logo design"],
+    "overview": "A wordmark identity for a fragrance brand.",
+    "devNotes": [
+      { "heading": "The starting point", "body": "Add a note about the original idea and the problem this project set out to solve." },
+      { "heading": "Decisions & details", "body": "Share the important choices, challenges, and details behind the work." }
+    ]
   }
 ]
